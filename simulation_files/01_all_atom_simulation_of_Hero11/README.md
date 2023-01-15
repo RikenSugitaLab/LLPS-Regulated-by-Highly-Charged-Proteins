@@ -1,4 +1,4 @@
-## All-atom MD simulations of Hero11
+## All-atom MD simulations of wild-type Hero11 and mutants
 
 In this subdirectory we have all the input files for simulations of Hero11-WT and Hero11-KRless mutant, starting from AlphaFold predicted structure and random coils, respectively.
 
@@ -13,6 +13,10 @@ Generally, to run simulations with GENESIS `spdyn`, please execute the following
 export OMP_NUM_THREADS=2
 mpirun -np 80 -ppn 20 GENESIS/bin/spdyn xxx.inp > xxx.log
 ```
+
+## Analysis
+
+MD trajectory analysis scripts are put in the subdirectory `ANALYSIS`. Please copy this directory to each system and modify paths in the scripts to make them work correctly.
 
 
 ## References

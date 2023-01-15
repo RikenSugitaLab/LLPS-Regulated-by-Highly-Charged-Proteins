@@ -22,7 +22,7 @@ For data analysis, we wrote scripts in Julia, Python and Tcl/tk scripts with the
 
 ## Directory Structure
 
-We put all the MD simulation files in the `simulation_files` directory.  With these files, one can reproduce all the results reported in the paper. MD trajectories are not included.
+We put all the MD simulation files and data analysis scripts in the `simulation_files` directory.  With these files, one can reproduce all the results reported in the paper. MD trajectories are not included.
 
 - `simulation_files/`
   - `01_all_atom_simulation_of_Hero11/`
@@ -31,3 +31,4 @@ We put all the MD simulation files in the `simulation_files` directory.  With th
     - `02_WT_from_random_coil/`
     - `03_KRless_from_helical_structure/`
     - `04_KRless_from_random_coil/`
+    - `ANALYSIS`
