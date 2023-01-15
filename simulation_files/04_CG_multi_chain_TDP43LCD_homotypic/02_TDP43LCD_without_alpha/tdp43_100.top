@@ -1,0 +1,23 @@
+; common interaction parameters for CG models
+#include "./param/atom_types.itp" 
+; AICG2+ flexible local angle parameters 
+#include "./param/flexible_local_angle.itp" 
+; AICG2+ flexible local dihedral parameters 
+#include "./param/flexible_local_dihedral.itp" 
+; residue-residue potential parameters (Miyazawa-Jernigan-1996-JMB) 
+#include "./param/pair_energy_MJ_96.itp" 
+
+; Molecule topology 
+#include "./top/tdp43_ctf_no_helix.itp" 
+
+[ system ] 
+tdp43_ctf 
+
+[ molecules ] 
+tdp43_ctf  100
+
+[ cg_ele_chain_pairs ] 
+ON 1 - 100 : 1 - 100
+; OFF 1 - 1 : 3 - 3 
+; OFF 1 - 1 
+

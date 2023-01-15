@@ -19,7 +19,5 @@ mpirun -np 80 -ppn 20 GENESIS/bin/spdyn xxx.inp > xxx.log
 MD trajectory analysis scripts are put in the subdirectory `ANALYSIS`. Please copy this directory to each system and modify paths in the scripts to make them work correctly.
 
 
-## References
-
 [^1]: Huang, J. et al. CHARMM36m: an improved force field for folded and intrinsically disordered proteins. Nat Methods 14, nmeth.4067 (2016).
   

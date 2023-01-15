@@ -32,3 +32,7 @@ We put all the MD simulation files and data analysis scripts in the `simulation_
     - `03_KRless_from_helical_structure/`
     - `04_KRless_from_random_coil/`
     - `ANALYSIS`
+  - `02_CG_single_chain_TDP43LCD`
+  - `04_CG_multi_chain_TDP43LCD_homotypic`
+    - `01_TDP43LCD_with_alpha`
+    - `02_TDP43LCD_without_alpha`
