@@ -18,3 +18,10 @@ For data analysis, we wrote Julia and Python scripts based on a collection of to
 
 We put all the MD simulation files in the `simulation_files` directory.  With these files, one can reproduce all the results reported in the paper. MD trajectories are not included.
 
+- `simulation_files/`
+  - `01_all_atom_simulation_of_Hero11/`
+    - `README.md`
+    - `01_WT_from_helical_structure/`
+    - `02_WT_from_random_coil/`
+    - `03_KRless_from_helical_structure/`
+    - `04_KRless_from_random_coil/`

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#PJM -L "rscgrp=small"
+#PJM -L "rscunit=rscunit_ft01"
+#PJM -L "node=32"
+#PJM --mpi "proc=128"
+#PJM -g ra000003
+#PJM -x PJM_LLIO_GFSCACHE=/vol0006
+#PJM -L "elapse=10:00:00"
+#PJM -j
+#PJM -S
+
+module switch lang/tcsds-1.2.35
+
+export OMP_NUM_THREADS=12
+export PLE_MPI_STD_EMPTYFILE=off
+
+bindir=/data/hp150270/u10177/Workspace/genesis-2.0/bin
+
+mpiexec -stdout heat1.log $bindir/spdyn heat1.inp
+

@@ -1,0 +1,49 @@
+[INPUT]
+topfile = ../toppar/top_all36_prot.rtf
+parfile = ../toppar/par_all36m_prot.prm
+strfile = ../toppar/toppar_water_ions.str
+psffile = ../01_build/ionize.psf
+pdbfile = ../01_build/ionize.pdb
+rstfile = ./md_04.rst
+
+[OUTPUT]
+dcdfile = md_05.dcd
+rstfile = md_05.rst
+
+[ENERGY]
+electrostatic    = PME       # [CUTOFF,PME]
+switchdist       = 10.0      # switch distance
+cutoffdist       = 12.0      # cutoff distance
+pairlistdist     = 13.5      # pair-list distance
+vdw_force_switch = yes
+
+[DYNAMICS]
+integrator        = VRES      # [LEAP,VVER]
+nsteps            = 48000000  # number of MD steps
+timestep          = 0.0035    # timestep (ps)
+eneout_period     = 3000      # energy output period
+crdout_period     = 3000      # coordinates output period
+rstout_period     = 3000000    # restart output period
+stoptr_period     = 10        # remove translational and rotational motions period
+elec_long_period  = 2
+thermostat_period = 6
+barostat_period   = 6
+nbupdate_period   = 6
+hydrogen_mr       = YES
+hmr_target        = solute
+hmr_ratio         = 3.0
+hmr_ratio_xh1     = 2.0
+
+[CONSTRAINTS]
+rigid_bond     = YES       # constraints all bonds
+
+[ENSEMBLE]
+ensemble       = NVT       # [NVE,NVT,NPT]
+tpcontrol      = BUSSI     # thermostat
+temperature    = 300.0     # initial temperature (K)
+pressure       = 1.0       # target pressure (atm)
+group_tp       = YES
+
+[BOUNDARY]
+type           = PBC       # [PBC,NOBC]
+
