@@ -38,4 +38,5 @@ gamma_t               = 0.01
 type                  = PBC   
 box_size_x            = 180.0
 box_size_y            = 180.0
-box_size_z            = 2000.0
+box_size_z            = 3000.0
+

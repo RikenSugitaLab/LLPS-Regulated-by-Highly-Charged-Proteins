@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#PJM -L rscunit=bwmpc
+#PJM -L rscgrp=batch
+#PJM -L vnode=1
+#PJM -L vnode-core=40
+#PJM -L elapse=23:50:00
+#PJM -g Q22536
+#PJM -j
+
+export OMP_NUM_THREADS=5
+
+gdir=/home/ctan/Workspace/genesis/src/atdyn
+
+mpirun -np 8 -ppn 8 $gdir/atdyn RUNNAME.atin > RUNNAME.log
+

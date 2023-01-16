@@ -44,3 +44,9 @@ We put all the MD simulation files and data analysis scripts in the `simulation_
   - `05_CG_multi_chain_Hero11WT_homotypic`
     - `01_Hero11WT_with_alpha`
     - `02_Hero11WT_without_alpha`
+  - `06_CG_multi_chain_Hero11_mutants_homotypic`
+    - `01.1_KRless_with_alpha`
+    - `01.2_KRless_without_alpha`
+    - `02.1_chargeless_with_alpha`
+    - `02.2_chargeless_without_alpha`
+    - `03_scramble_without_alpha`
