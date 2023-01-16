@@ -41,3 +41,6 @@ We put all the MD simulation files and data analysis scripts in the `simulation_
   - `04_CG_multi_chain_TDP43LCD_homotypic`
     - `01_TDP43LCD_with_alpha`
     - `02_TDP43LCD_without_alpha`
+  - `05_CG_multi_chain_Hero11WT_homotypic`
+    - `01_Hero11WT_with_alpha`
+    - `02_Hero11WT_without_alpha`

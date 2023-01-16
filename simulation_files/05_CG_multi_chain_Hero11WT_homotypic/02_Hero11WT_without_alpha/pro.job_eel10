@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#PBS -l select=1:ncpus=24:mpiprocs=8:ompthreads=3
+#PBS -l place=scatter:exclhost
+
+NPROC=$(cat $PBS_NODEFILE | wc -l )
+GDIR=/home/tan/Workspace/genesis/src/atdyn
+
+export OMP_NUM_THREADS=3
+
+cd $PBS_O_WORKDIR
+uniq ${PBS_NODEFILE} > mfile.RUNNAME
+
+mpiexec.hydra -genvall -f mfile.RUNNAME -n $NPROC -ppn 8 $GDIR/atdyn RUNNAME.atin > RUNNAME.log
+
+rm -f mfile.RUNNAME
+
