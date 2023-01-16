@@ -15,4 +15,10 @@ where `xxx.atin` is the MD control file you can find in each directory.
 
 In many cases, to easily change simulation conditions such as temperature, I wrote bash scripts to generate files automatically.  These files are usually named as "`submit.sh`". 
 
+### Analysis
+
 In the CG simulation directories, there are `analysis` subdirectories, in which we put all of our trajectory analysis scripts.
+
+Many of my scripts calls [GENESIS-CG-tool](https://github.com/genesis-release-r-ccs/genesis_cg_tool).  Please refer to [the wikipage](https://github.com/genesis-release-r-ccs/genesis_cg_tool/wiki) for details.
+
+
