@@ -33,6 +33,11 @@ We put all the MD simulation files and data analysis scripts in the `simulation_
     - `04_KRless_from_random_coil/`
     - `ANALYSIS`
   - `02_CG_single_chain_TDP43LCD`
+    - `01_with_alpha`
+    - `01_without_alpha`
+  - `03_CG_single_chain_Hero11WT`
+    - `01_with_alpha`
+    - `01_without_alpha`
   - `04_CG_multi_chain_TDP43LCD_homotypic`
     - `01_TDP43LCD_with_alpha`
     - `02_TDP43LCD_without_alpha`

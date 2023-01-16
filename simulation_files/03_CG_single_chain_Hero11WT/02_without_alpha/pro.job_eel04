@@ -1,0 +1,11 @@
+#!/bin/bash
+#$ -cwd
+#$ -q q2.q
+#$ -pe impi24 24
+#$ -S /bin/bash
+
+export OMP_NUM_THREADS=3
+gdir=/home/tan/Workspace/genesis/src/atdyn
+
+mpiexec.hydra -np 8 -ppn 8 $gdir/atdyn RUNNAME.atin > RUNNAME.log
+
