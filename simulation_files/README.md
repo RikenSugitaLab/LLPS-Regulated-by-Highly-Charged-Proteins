@@ -4,7 +4,7 @@ See details in [01_all_atom_simulation_of_Hero11](https://github.com/RikenSugita
 
 ## CG simulations
 
-Please copy the `param` subdirectory to each system before you start the simulations.  The `param` directory stores CG parameter files.  It is the same as the one you can get from [GENESIS-CG-tool](https://github.com/genesis-release-r-ccs/genesis_cg_tool/tree/main/param), except for the HPS parameters in file `atom_types.itp`, from which we used the HPS-Urry set in the current study.
+Please copy the `param` subdirectory to each system before you start the simulations.  The `param` directory stores CG parameter files.  It is the same as the one in [GENESIS-CG-tool](https://github.com/genesis-release-r-ccs/genesis_cg_tool/tree/main/param), except for the HPS parameters in file `atom_types.itp`, from which we used the HPS-Urry set in the current study.
 
 Basically, to perform CG simulations with GENESIS `atdyn`, please execute the following commands (just an example):
 ```bash

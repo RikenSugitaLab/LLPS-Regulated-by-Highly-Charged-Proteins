@@ -58,3 +58,7 @@ We put all the MD simulation files and data analysis scripts in the `simulation_
     - `01.2_KRless_without_helix`
     - `02.1_chargeless_with_helix`
     - `02.2_chargeless_without_helix`
+  - `09_CG_multi_chain_TDP43LCD_100_Hero11WT_N_heterotypic`
+    - `01_Hero11WT_with_alpha_multi_temperature`
+    - `02_Hero11WT_without_alpha_multi_temperature`
+    - `03_Hero11WT_290K_more_simulations`
