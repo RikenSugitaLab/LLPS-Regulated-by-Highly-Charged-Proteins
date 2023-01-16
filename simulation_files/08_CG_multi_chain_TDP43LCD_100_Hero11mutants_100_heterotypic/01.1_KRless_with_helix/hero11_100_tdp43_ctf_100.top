@@ -1,0 +1,17 @@
+#include "./param/atom_types.itp"
+#include "./param/flexible_local_angle.itp"
+#include "./param/flexible_local_dihedral.itp"
+#include "./param/pair_energy_MJ_96.itp"
+#include "top/hero11.itp"
+#include "top/tdp43_ctf.itp"
+
+[ system ]
+hero11 + tdp43_ctf
+
+[ molecules ]
+hero11  100
+tdp43_ctf  100
+
+[ cg_ele_chain_pairs ]
+ON 1 - 200 : 1 - 200
+

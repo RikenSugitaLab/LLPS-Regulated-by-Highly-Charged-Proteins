@@ -50,3 +50,11 @@ We put all the MD simulation files and data analysis scripts in the `simulation_
     - `02.1_chargeless_with_alpha`
     - `02.2_chargeless_without_alpha`
     - `03_scramble_without_alpha`
+  - `07_CG_multi_chain_TDP43LCD_100_Hero11WT_100_heterotypic`
+    - `01_Hero11WT_with_alpha`
+    - `02_Hero11WT_without_alpha`
+  - `08_CG_multi_chain_TDP43LCD_100_Hero11mutants_100_heterotypic`
+    - `01.1_KRless_with_helix`
+    - `01.2_KRless_without_helix`
+    - `02.1_chargeless_with_helix`
+    - `02.2_chargeless_without_helix`
