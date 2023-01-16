@@ -12,8 +12,8 @@ electrostatic         = CUTOFF
 cg_IDR_HPS_epsilon    = 0.2
 cg_cutoffdist_126     = 20.0
 cg_cutoffdist_ele     = 35.0
-cg_pairlistdist_126   = 23.0
-cg_pairlistdist_ele   = 38.0
+cg_pairlistdist_126   = 25.0
+cg_pairlistdist_ele   = 40.0
 
 [DYNAMICS]
 integrator            = VVER_CG

@@ -70,7 +70,7 @@ end
 
 
 if abspath(PROGRAM_FILE) == @__FILE__
-    for iT in 1:10
+    for iT in 1:20
         calculate_contact_map(iT, 1)
     end
 

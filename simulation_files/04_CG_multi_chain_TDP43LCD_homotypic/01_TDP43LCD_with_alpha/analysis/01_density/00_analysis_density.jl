@@ -5,7 +5,7 @@ include("/home/ctan/Workspace/genesis_CG_julia/src/lib/parser_dcd.jl")
 
 using Printf
 
-T_list = [i * 10 + 250 for i in 1:10]
+T_list = [i * 5 + 250 for i in 1:20]
 
 NUM_ATOM_HERO = 99
 NUM_ATOM_TDP43 = 154
